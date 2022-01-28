@@ -1,0 +1,83 @@
+:root {
+  --primary-text-color: rgba(117, 117, 117, 1);
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #e5e5e5;
+  --primary-dark-color: #2f303a;
+  --section-color: #f5f4fa;
+  --secondary-white-color: #ffffff;
+}
+
+.list,
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: var(--secondary-white-color);
+}
+body {
+  background-color: var(--secondary-white-color);
+
+  color: var(--primary-text-color);
+}
+
+/* Шапка сайта */
+.logo:hover {
+  color: var(--accent-color);
+}
+.site-nav-list a {
+  color: var(--title-text-color);
+}
+.site-nav-list a:hover,
+.site-nav-list a:hover {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  color: var(--primary-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--primary-dark-color);
+}
+.hero-title {
+  color: var(--secondary-white-color);
+}
+.hero-button {
+  color: var(--secondary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Преимущества */
+.feature .title {
+  color: var(--title-text-color);
+}
+
+/* Наши услуги */
+.section-title {
+  color: var(--title-text-color);
+}
+/* Наша команда */
+.team {
+  background-color: var(--section-color);
+}
+.team-card h3 {
+  color: var(--title-text-color);
+}
+.team-card p {
+  color: var(--primary-text-color);
+}
+/* Футер */
+footer {
+  background-color: var(--primary-dark-color);
+}
+address {
+  color: var(--secondary-white-color);
+}
