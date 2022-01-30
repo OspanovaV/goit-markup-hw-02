@@ -1,11 +1,12 @@
 :root {
-  --primary-text-color: rgba(117, 117, 117, 1);
+  --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #e5e5e5;
   --primary-dark-color: #2f303a;
   --section-color: #f5f4fa;
   --secondary-white-color: #ffffff;
+  --address-color: rgba(255, 255, 255, 0.6);
 }
 
 .list,
@@ -18,28 +19,46 @@ header {
 }
 body {
   background-color: var(--secondary-white-color);
-
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* Шапка сайта */
-.logo:hover {
+.logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+button {
+  font-family: inherit;
 }
 .site-nav-list a {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
 }
+
 .site-nav-list a:hover,
-.site-nav-list a:hover {
+.site-nav-list a:focus {
   color: var(--accent-color);
 }
 
-.contacts-link {
+.contacts-link a {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.15;
+  letter-spacing: 0.02em;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-link a:hover,
+.contacts-link a:focus {
   color: var(--accent-color);
 }
 
@@ -49,35 +68,76 @@ body {
 }
 .hero-title {
   color: var(--secondary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
+
 .hero-button {
   color: var(--secondary-white-color);
   background-color: var(--accent-color);
+  letter-spacing: 0.06em;
 }
 
 /* Преимущества */
 .feature .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.feature p {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Наши услуги */
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
+
 /* Наша команда */
 .team {
   background-color: var(--section-color);
 }
 .team-card h3 {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
+
 .team-card p {
   color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
+
 /* Футер */
 footer {
   background-color: var(--primary-dark-color);
 }
-address {
+.address {
   color: var(--secondary-white-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address-link {
+  color: var(--address-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
 }
